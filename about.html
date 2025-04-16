@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Jack Marich</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #fafae2;
+        font-family: "Indie Flower", cursive;
+        background-image: linear-gradient(
+            to right,
+            #e0e0c0 1px,
+            transparent 1px
+          ),
+          linear-gradient(to bottom, #e0e0c0 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        max-width: 800px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: inherit;
+        padding: 10px;
+      }
+      .back-button:hover {
+        color: #666;
+      }
+      .content {
+        font-size: 1.5em;
+        line-height: 1.6;
+        margin-top: 20px;
+      }
+      @media (max-width: 900px) {
+        .container {
+          padding: 20px;
+          margin-top: 40px;
+        }
+        .content {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-button">← back</a>
+      <div class="content">
+        <h1>About Me</h1>
+        <p>
+          Hi there! I'm Jack, a creative soul who loves turning bad ideas into
+          something even worse (but hopefully more interesting). I spend my days
+          learning, coding, and occasionally making videos that make people
+          question their life choices.
+        </p>
+        <p>
+          When I'm not busy making questionable content, you can find me
+          exploring the depths of the internet, collecting random facts that
+          will probably never be useful, and planning crazy trips that people
+          don't even dream of.
+        </p>
+        <p>
+          My philosophy in life is simple: if you're going to fail, fail
+          spectacularly. And maybe make someone laugh while you're at it.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
