@@ -73,7 +73,7 @@ export default function Scene() {
         </Canvas>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 flex flex-col items-center gap-4 pointer-events-auto animate-drop-controls" style={{ transform: 'translateX(-50%)' }}>
+      <div className="absolute bottom-10 left-1/2 flex flex-col items-center gap-4 pointer-events-auto animate-drop-controls z-10" style={{ transform: 'translateX(-50%)' }}>
         <div className="flex gap-4">
           <button
             onClick={handleShuffle}
@@ -95,11 +95,11 @@ export default function Scene() {
         <p className="text-gray-400 text-sm font-mono uppercase tracking-widest opacity-60">Drag to Rotate • Scroll to Zoom</p>
       </div>
 
-      <div className="absolute top-10 left-10 text-black animate-slide-title w-max">
+      <div className="absolute top-10 left-10 text-black animate-slide-title z-10 max-w-[80vw]">
         <h1 className="text-4xl font-bold tracking-tighter mb-2">JACK MARICH</h1>
         <p className="text-gray-500 font-mono text-sm mb-4">MAKER • ENGINEER • INVENTOR</p>
         
-        <div className="flex gap-3 animate-fade-socials">
+        <div className="flex gap-3 animate-fade-socials flex-wrap">
           {socialLinks.map((link, i) => (
             <a
               key={i}
