@@ -99,14 +99,14 @@ export default function Scene() {
         <h1 className="text-4xl font-bold tracking-tighter mb-2">JACK MARICH</h1>
         <p className="text-gray-500 font-mono text-sm mb-4">MAKER • ENGINEER • INVENTOR</p>
         
-        <div className="flex gap-3 animate-fade-socials flex-wrap">
+        <div className="flex gap-3 animate-fade-socials flex-wrap justify-center sm:justify-start">
           {socialLinks.map((link, i) => (
             <a
               key={i}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/10 border border-black/10 hover:bg-black/5 hover:scale-110 transition-all backdrop-blur-sm text-gray-700 hover:text-black"
+              className="p-2 rounded-full bg-black/5 border border-black/10 hover:bg-black/10 hover:scale-110 transition-all backdrop-blur-sm text-gray-700 hover:text-black"
               aria-label={link.label}
             >
               {link.icon}

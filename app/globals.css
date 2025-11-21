@@ -79,12 +79,18 @@ body {
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accessibility: Ensure elements are visible if user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fall-main,
+  .animate-drop-controls,
+  .animate-slide-title,
+  .animate-fade-socials {
+    animation: none;
     opacity: 1;
-    transform: translateY(0);
+    transform: none !important;
   }
 }
