@@ -32,7 +32,7 @@ export default function Scene() {
   return (
     <>
       <div className="absolute inset-0 animate-fall-main">
-        <Canvas camera={{ position: [5, 5, 5], fov: 45 }} shadows>
+        <Canvas camera={{ position: [10, 10, 10], fov: 45 }} shadows>
           <color attach="background" args={['#f5f5f5']} />
           {/* Lighting */}
           <ambientLight intensity={0.5} />
