@@ -35,12 +35,12 @@ export default function Scene() {
         <Canvas camera={{ position: [10, 10, 10], fov: 45 }} shadows>
           <color attach="background" args={['#f5f5f5']} />
           {/* Lighting */}
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={0.8} />
           <spotLight 
             position={[10, 10, 10]} 
             angle={0.15} 
             penumbra={1} 
-            intensity={1.5} 
+            intensity={1} 
             castShadow 
             shadow-mapSize={[2048, 2048]}
           />

@@ -134,15 +134,16 @@ export const Cubie = forwardRef<Group, CubieProps>(({ position, initialPosition 
 
            {/* 2. The Face Image Overlay */}
            {face.texture && (
-             <mesh position={[0, 0, 0.02]}>
+             <mesh position={[0, 0, 0.025]}>
                <planeGeometry args={[0.88, 0.88]} />
-               <meshBasicMaterial 
+               <meshStandardMaterial 
                  map={face.texture} 
                  transparent 
                  opacity={1} 
                  depthTest={true}
                  depthWrite={false}
-                 toneMapped={false} // Keep colors vibrant in post-processing
+                 roughness={0.8}
+                 metalness={0}
                />
              </mesh>
            )}
