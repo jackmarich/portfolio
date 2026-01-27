@@ -84,7 +84,7 @@ export default function BioPage() {
       <div className="relative z-10 flex flex-col items-center min-h-screen w-full max-w-md mx-auto py-16 px-5">
         
         {/* Profile Section */}
-        <div className="flex flex-col items-center mb-8 w-full">
+        <div className="flex flex-col items-center mb-16 w-full">
           {/* Name */}
           <h1 className="text-4xl font-extrabold tracking-tight mb-3 text-white drop-shadow-lg">
             Jmar
@@ -105,7 +105,7 @@ export default function BioPage() {
         </div>
 
         {/* Social Icons Row */}
-        <div className="flex gap-6 mb-10">
+        <div className="flex gap-6 mb-20">
           {socialIcons.map((link) => (
             <a
               key={link.label}
