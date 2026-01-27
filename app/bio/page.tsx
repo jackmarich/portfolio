@@ -76,8 +76,8 @@ export default function BioPage() {
             backgroundImage: 'url(/background.png)'
           }}
         />
-        {/* Dark gradient overlay - darker at bottom for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/75 to-black/95 pointer-events-none" />
+        {/* Dark gradient overlay - starts near buttons, lighter at top */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-black/20 to-black/90 pointer-events-none" />
       </div>
 
       {/* Content Container */}
