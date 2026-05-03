@@ -20,13 +20,13 @@ const linkButtons = [
     label: 'Instagram',
     href: 'https://www.instagram.com/hellojmar',
     icon: <Instagram size={28} className="text-gray-700" />,
-    username: '@lifeofjmar_'
+    username: '@hellojmar'
   },
   {
     label: 'TikTok',
     href: 'https://www.tiktok.com/@hellojmar',
     icon: <TikTokIcon className="w-7 h-7 text-gray-700" />,
-    username: '@lifeofjmar'
+    username: '@hellojmar'
   },
   {
     label: 'YouTube',
