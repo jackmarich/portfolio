@@ -18,13 +18,13 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 const linkButtons = [
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/lifeofjmar_',
+    href: 'https://www.instagram.com/hellojmar',
     icon: <Instagram size={28} className="text-gray-700" />,
     username: '@lifeofjmar_'
   },
   {
     label: 'TikTok',
-    href: 'https://www.tiktok.com/@lifeofjmar',
+    href: 'https://www.tiktok.com/@hellojmar',
     icon: <TikTokIcon className="w-7 h-7 text-gray-700" />,
     username: '@lifeofjmar'
   },
